@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    color: white;
+    width: 100%;
+}
+
+nav {
+    background-color: #1f2136;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+}
+
+nav h1 {
+    display: inline;
+    margin: 0;
+    margin-left: 5px;
+}
+
+nav ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    margin-right: 30px;
+}
+
+nav ul li {
+    float: right;;
+    margin-right: 10px;
+    padding: 4px 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+.jumbotron {
+    background-color: #23253a;
+    padding: 0px;
+    text-align: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.jumbotron img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: solid white 2px;
+}
+
+.jumbotron .name {
+    margin-top: -10px;
+}
+
+.jumbotron .name p {
+    margin-top: -15px;
+}
+
+.jumbotron .cv {
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    background-color: rgba(255, 0, 0, 0.637); 
+    border-radius: 4px;
+}
+
+.jumbotron .cv:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.about-me {
+    padding: 20px 150px;
+    background-color: #1f2136;
+    text-align: center;
+}
+.about-me span{
+    color:rgba(255, 0, 0, 0.8);
+}
+.about-me h2 {
+    margin-top: 4px;
+}
+.about-me .detail {
+    display: block;
+    width: 50%;
+    margin: 0 auto; 
+}
+.about-me ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-me ul li {
+    margin-bottom: 10px;
+}
+
+.projects {
+    padding: 20px 120px;
+    background-color: #23253a;
+    text-align: center;
+}
+.projects span{
+    color:rgba(255, 0, 0, 0.8);
+}
+.projects h2 {
+    margin-top: 4px;
+}
+.projects .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects .container .item {
+    margin: 10px;
+    padding: 15px;
+    background-color: #1f2136;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+.projects .container .item a {
+    display: block;
+    margin: auto;
+    width: 80%;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    background-color: rgba(255, 0, 0, 0.6); 
+    border-radius: 4px;
+}
+
+.projects .container .item a:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.contact {
+    padding: 20px 150px;
+    background-color: #1f2136;
+    text-align: center;
+}
+.contact span{
+    color:rgba(255, 0, 0, 0.8);
+}
+.contact h2 {
+    margin-top: 4px;
+}
+.contact ul{
+    list-style-type: none;
+    padding: 0;
+}
+.contact ul li {
+    margin-bottom: 5px;
+}
+.contact li a {
+    color: white;
+}
+footer {
+    background-color: #23253a;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li{
+        padding: 4px 0;
+    }
+    .jumbotron .name{
+        padding: 0 8px;
+    }
+    .about-me, .projects, .contact {
+        padding: 20px 35px
+    }
+    .projects .container {
+        flex-direction: column;
+    }
+    .projects .container .item {
+        width: 80%;
+        align-self: center;
+    }
+   
+    
+}
